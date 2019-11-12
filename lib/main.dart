@@ -112,7 +112,10 @@ class _MainPageState extends State<MainPage> {
             ),
 
             InkWell(
-              onTap: (){},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => About()),
+                );
+              },
               child: ListTile(
                 title: Text('About App'),
                 leading: Icon(Icons.help_outline,color: Colors.blue,),
