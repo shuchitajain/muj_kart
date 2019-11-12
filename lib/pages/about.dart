@@ -30,11 +30,11 @@ class _AboutState extends State<About> {
             Text(
               'Senior Developer',
               style: TextStyle(
-                  fontFamily: 'SourceSansPro',
-                  letterSpacing: 2.5,
-                  color: Colors.black54,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
+                fontFamily: 'SourceSansPro',
+                letterSpacing: 2.5,
+                color: Colors.black54,
+                fontSize: 20,
+                fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
               ),
             ),
             CircleAvatar(
@@ -44,20 +44,20 @@ class _AboutState extends State<About> {
             Text(
               'Shuchita Jain',
               style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  color: Colors.black,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
+                fontFamily: 'Pacifico',
+                color: Colors.black,
+                fontSize: 30,
+                fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
               ),
             ),
             Text(
               'Senior Developer',
               style: TextStyle(
-                  fontFamily: 'SourceSansPro',
-                  letterSpacing: 2.5,
-                  color: Colors.black54,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
+                fontFamily: 'SourceSansPro',
+                letterSpacing: 2.5,
+                color: Colors.black54,
+                fontSize: 20,
+                fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,
               ),
             ),
           ],

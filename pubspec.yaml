@@ -17,6 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  flutter_swiper: ^1.1.6
   flutter:
     sdk: flutter
   carousel_pro: ^1.0.0
@@ -46,17 +47,9 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
-    - images/images.jpeg
-    - images/i1.jpeg
-    - images/notes.jpeg
-    - images/eg.jpeg
-    - images/lay.jpg
-    - images/shuchita.jpg
-    - images1/computer-tablet.png
-    - images1/writing.png
-    - images1/open-book.png
-    - images1/tag.png
-    - images1/checkbox-pen-outline.png
+    - images/
+    - images1/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

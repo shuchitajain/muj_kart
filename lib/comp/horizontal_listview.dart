@@ -4,27 +4,27 @@ class HorizontalView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80.0,
+      height: 90,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            image_location:'images1/writing.png' ,
+            image_location:'images1/icons8-open-book-64.png' ,
             image_caption: 'Notes',
           ),
 
           Category(
-            image_location:'images1/open-book.png' ,
+            image_location:'images1/icons8-tasks-64.png' ,
             image_caption: 'Books',
           ),
 
           Category(
-            image_location:'images1/checkbox-pen-outline.png' ,
-            image_caption: 'Lab Material',
+            image_location:'images1/icons8-note-64.png' ,
+            image_caption: 'Lab',
           ),
 
           Category(
-            image_location:'images1/computer-tablet.png' ,
+            image_location:'images1/icons8-multiple-devices-64.png' ,
             image_caption: 'Electronics',
           ),
 
@@ -50,7 +50,7 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(2.0),
+      padding: const EdgeInsets.all(8.0),
       child: InkWell(
         onTap: () {},
         child: Container(
@@ -59,13 +59,13 @@ class Category extends StatelessWidget {
             title: Image.asset(
               image_location,
               width: 100.0,
-              height: 50.0,
+              height: 60.0,
             ),
             subtitle: Container(
-              height: 200.0,
+              height: 400.0,
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 5.0),
-              child: Text(image_caption,style: new TextStyle(fontSize: 10.0,color: Colors.red),),
+              padding: EdgeInsets.only(top: 2.0),
+              child: Text(image_caption,style: new TextStyle(fontSize: 15.0,color: Colors.black54),),
             ),
           ),
         ),
