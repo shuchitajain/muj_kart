@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:finalize/pages/product_details.dart';
+import 'package:muj_kart/pages/product_details.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -9,9 +9,21 @@ class Products extends StatefulWidget {
 class _ProductsState extends State<Products> {
   var product_list = [
     {
-      "name": "BOOK",
-      "picture": "images1/tag.png",
+      "name": "Bs grewal",
+      "picture": "images1/book_icon.png",
       "price": 500,
+    },
+
+    {
+      "name": "Drafter",
+      "picture": "images1/drafter.png",
+      "price": 250,
+    },
+
+    {
+      "name": "Lab coat",
+      "picture": "images1/labcoat.png",
+      "price": 250,
     },
 
   ];
@@ -21,7 +33,7 @@ class _ProductsState extends State<Products> {
     return GridView.builder(
         itemCount: product_list.length,
         gridDelegate:
-            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         itemBuilder: (BuildContext context, int index) {
           return Single(
             prod_name: product_list[index]['name'],
@@ -51,34 +63,37 @@ class Single extends StatelessWidget {
           child: Material(
             child: InkWell(
               onTap:()=> Navigator.of(context).push(new MaterialPageRoute(
-                  builder: (context) => new ProductDetails())),
-              child: GridTile(
-                  footer: Container(
-                    color: Colors.white,
-                    child: ListTile(
-                      leading: Text(
-                        prod_name,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      title: Text(
-                        "\$$prod_price",
-                        style: TextStyle(
-                            color: Colors.red, fontWeight: FontWeight.w800),
-                      ),
-                      subtitle: Text(
-                        "\$$prod_price",
-                        style: TextStyle(
-                            color: Colors.red, fontWeight: FontWeight.w800),
-                      ),
+                  builder: (context) => new ProductDetails()
+                )
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          prod_pic,
+                          height: 50,
+                          fit: BoxFit.scaleDown,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8),
+                        ),
+                        Text(
+                            prod_name,
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                          ),
+                        Text(
+                          "\$$prod_price",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.red, fontWeight: FontWeight.w800),
+                        ),
+                      ],
+                    ),
                     ),
                   ),
-                  child: Image.asset(
-                    prod_pic,
-                    fit: BoxFit.cover,
-                  )),
-            ), //----------------------------------
-          ),
-      ),
-    );
+            ),
+          );
   }
 }

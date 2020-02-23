@@ -1,4 +1,4 @@
-# finalize
+# muj_kart
 
 A new Flutter application.
 

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 //UI Files
 
-import 'package:finalize/comp/horizontal_listview.dart';
-import 'package:finalize/comp/products.dart';
-import 'package:finalize/pages/about.dart';
+import 'package:muj_kart/comp/horizontal_listview.dart';
+import 'package:muj_kart/comp/products.dart';
+import 'package:muj_kart/pages/about.dart';
 
 
 void main(){
@@ -128,9 +128,21 @@ class _MainPageState extends State<MainPage> {
 
       body: new ListView(
         children: <Widget>[
-          image_scroll,
-          new Padding(padding: const EdgeInsets.all(15.0),
-            child: new Text(
+           Container(
+             color: Colors.indigoAccent,
+             height: 35.0,
+             alignment: Alignment.center,
+             child: Text(
+              'Welcome user!',
+               style: TextStyle(
+                 color: Colors.white,
+                 fontSize: 15.0,
+               ),
+             ),
+           ),
+           image_scroll,
+           Padding(padding: const EdgeInsets.all(15.0),
+            child: Text(
               'Categories',
               style: TextStyle(
                 fontSize: 20,
@@ -142,7 +154,7 @@ class _MainPageState extends State<MainPage> {
           //Categories started here
           HorizontalView(),
 
-          new Padding(padding: const EdgeInsets.all(30.0),
+          new Padding(padding: const EdgeInsets.only(top: 30.0, left: 15.0),
             child: new Text(
               'Recent Browses',
               style: TextStyle(
@@ -153,12 +165,13 @@ class _MainPageState extends State<MainPage> {
             ),
           ),
 
-          //RECENTS
+          new Padding(padding: const EdgeInsets.only(top: 10.0),
 
-          Container(
-            height: 300.0,
-            child: Products(),
+            child: Container(
+             height: 200.0,
+             child: Products(),
           )
+          ),
         ],
       ),
     );

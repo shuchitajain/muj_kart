@@ -1,4 +1,4 @@
-package com.example.finalize
+package com.example.muj_kart
 
 import android.os.Bundle
 

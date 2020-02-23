@@ -11,7 +11,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     return Scaffold(
       appBar: new AppBar(
         elevation: 0.0,
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.indigo,
         title: Text('MUJ-Kart'),
         actions: <Widget>[
           new IconButton(icon: Icon(Icons.search,color: Colors.white,), onPressed: (){}),
