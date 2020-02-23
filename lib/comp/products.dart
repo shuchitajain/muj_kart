@@ -84,7 +84,7 @@ class Single extends StatelessWidget {
                           textAlign: TextAlign.center,
                           ),
                         Text(
-                          "\$$prod_price",
+                          "\u20B9$prod_price",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.red, fontWeight: FontWeight.w800),
