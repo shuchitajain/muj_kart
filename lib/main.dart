@@ -31,9 +31,10 @@ class _MainPageState extends State<MainPage> {
         boxFit: BoxFit.cover,
 
         images: [
-          AssetImage('images/photo_2019-11-13_01-30-27.jpg'),
-          AssetImage('images/photo_2019-11-13_01-30-38.jpg'),
-          AssetImage('images/photo_2019-11-13_01-30-33.jpg'),
+          AssetImage('images/p1.jpg'),
+          AssetImage('images/p2.jpg'),
+          AssetImage('images/p3.jpg'),
+          AssetImage('images/p4.jpg'),
         ],
         autoplay: true,
         animationCurve: Curves.fastOutSlowIn,
