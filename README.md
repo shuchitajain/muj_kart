@@ -5,4 +5,4 @@ The app can be used to buy and sell your old notes/books to your juniors for fre
 
 ## Screenshots
 
-<img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_01.png" height = "240">   <img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_02.png" height = "240" >   <img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_03.png" height = "240" > 
+<img src = "https://github.com/shuchitajain/muj_kart/blob/master/flutter_01.png" height = "240">   <img src = "https://github.com/shuchitajain/muj_kart/blob/master/flutter_02.png" height = "240" >   <img src = "https://github.com/shuchitajain/muj_kart/blob/master/flutter_03.png" height = "240" > 
