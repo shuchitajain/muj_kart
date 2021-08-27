@@ -1,16 +1,8 @@
 # muj_kart
 
-A new Flutter application.
+My first Flutter application in collaboration with Lay Patel. 
+The app can be used to buy and sell your old notes/books to your juniors for free or can be charged.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_01.png" height = "240">   <img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_02.png" height = "240" >   <img src = "https://github.com/shuchitajain/muj_kart/blob/main/flutter_03.png" height = "240" > 
