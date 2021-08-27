@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:muj_kart/pages/datalist.dart';
+import 'package:muj_kart/models/datalist.dart';
 
 class Detail extends StatelessWidget {
 
@@ -19,8 +19,8 @@ class Detail extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(listWordsDetail.titlelist + ' (on detail page)'),
-              Text(listWordsDetail.definitionlist),
+              Text(listWordsDetail.titleList + ' (on detail page)'),
+              Text(listWordsDetail.definitionList),
             ],
           ),
         )

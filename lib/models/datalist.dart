@@ -1,4 +1,4 @@
-List<ListWords>  listWords = [
+final List<ListWords>  listWords = [
   ListWords('BS Grewal', 'OneWord definition'),
   ListWords('Galvin', 'TwoWord definition.'),
   ListWords('Rdbms notes', 'TreeWord definition'),
@@ -8,11 +8,8 @@ List<ListWords>  listWords = [
 ];
 
 class ListWords {
-  String titlelist;
-  String definitionlist;
+  String titleList;
+  String definitionList;
 
-  ListWords(String titlelist, String definitionlist) {
-    this.titlelist = titlelist;
-    this.definitionlist = definitionlist;
-  }
+  ListWords(this.titleList, this.definitionList);
 }

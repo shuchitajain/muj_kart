@@ -9,28 +9,28 @@ class HorizontalView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
-            image_location:'images1/icons8-open-book-64.png' ,
-            image_caption: 'Notes',
+            imageLocation:'images1/icons8-open-book-64.png' ,
+            imageCaption: 'Notes',
           ),
 
           Category(
-            image_location:'images1/icons8-tasks-64.png' ,
-            image_caption: 'Books',
+            imageLocation:'images1/icons8-tasks-64.png' ,
+            imageCaption: 'Books',
           ),
 
           Category(
-            image_location:'images1/icons8-note-64.png' ,
-            image_caption: 'Lab',
+            imageLocation:'images1/icons8-note-64.png' ,
+            imageCaption: 'Lab',
           ),
 
           Category(
-            image_location:'images1/icons8-multiple-devices-64.png' ,
-            image_caption: 'Electronics',
+            imageLocation:'images1/icons8-multiple-devices-64.png' ,
+            imageCaption: 'Electronics',
           ),
 
           Category(
-            image_location:'images1/tag.png' ,
-            image_caption: 'Miscellaneous',
+            imageLocation:'images1/icons8-open-book-64.png' ,
+            imageCaption: 'Miscellaneous',
           ),
         ],
       ),
@@ -39,12 +39,12 @@ class HorizontalView extends StatelessWidget {
 }
 
 class Category extends StatelessWidget {
-  final String image_location;
-  final String image_caption;
+  final String imageLocation;
+  final String imageCaption;
 
   Category({
-    this.image_location,
-    this.image_caption,
+    this.imageLocation,
+    this.imageCaption,
   });
 
   @override
@@ -57,7 +57,7 @@ class Category extends StatelessWidget {
           width: 100.0,
           child: ListTile(
             title: Image.asset(
-              image_location,
+              imageLocation,
               width: 100.0,
               height: 60.0,
             ),
@@ -65,7 +65,7 @@ class Category extends StatelessWidget {
               height: 400.0,
               alignment: Alignment.topCenter,
               padding: EdgeInsets.only(top: 2.0),
-              child: Text(image_caption,style: new TextStyle(fontSize: 15.0,color: Colors.black54),),
+              child: Text(imageCaption,style: new TextStyle(fontSize: 15.0,color: Colors.black54),),
             ),
           ),
         ),
